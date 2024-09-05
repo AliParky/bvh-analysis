@@ -1,5 +1,6 @@
 # Read the BVH file and parse it
-bvh_data = open("BVH-Recording1.bvh").read().splitlines()
+with open("BVH-Recording1.bvh") as f:
+    bvh_data = f.read().splitlines()
 
 # Find the number of frames
 num_frames = 0
