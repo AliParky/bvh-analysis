@@ -4,6 +4,7 @@ with open("BVH-Recording1.bvh") as f:
 
 # Find the number of frames
 num_frames = 0
+frame_time = 0
 for line in bvh_data:
     if line.startswith("Frames:"):
         num_frames = int(line.split()[1])
@@ -11,3 +12,4 @@ for line in bvh_data:
 
 # Print the number of frames
 print(f"Number of frames: {num_frames}")
+print(f"Frame time: {frame_time} seconds")
