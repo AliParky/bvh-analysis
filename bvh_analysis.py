@@ -12,6 +12,10 @@ for line in bvh_data:
         frame_time = float(line.split()[2])
         break
 
+# Calculate the total duration
+total_duration = num_frames * frame_time
+
 # Print the number of frames
 print(f"Number of frames: {num_frames}")
 print(f"Frame time: {frame_time} seconds")
+print(f"Total duration: {total_duration} seconds")
