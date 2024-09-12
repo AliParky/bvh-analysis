@@ -18,6 +18,8 @@ for line in bvh_data:
         frame_time = float(line.split()[2])
         break
 
+num_frames = bvh.nframes
+
 # Calculate the total duration
 total_duration = num_frames * frame_time
 
