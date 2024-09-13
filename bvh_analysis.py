@@ -9,16 +9,8 @@ with open("BVH-Recording1.bvh") as f:
 bvh = Bvh(bvh)
 
 # Find the number of frames
-num_frames = 0
-frame_time = 0
-for line in bvh_data:
-    if line.startswith("Frames:"):
-        num_frames = int(line.split()[1])
-    elif line.startswith("Frame Time:"):
-        frame_time = float(line.split()[2])
-        break
-
 num_frames = bvh.nframes
+frame_time = 0
 
 # Calculate the total duration
 total_duration = num_frames * frame_time
