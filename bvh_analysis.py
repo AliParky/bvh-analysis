@@ -10,7 +10,7 @@ bvh = Bvh(bvh)
 
 # Find the number of frames
 num_frames = bvh.nframes
-frame_time = 0
+frame_time = bvh.frame_time
 
 # Calculate the total duration
 total_duration = num_frames * frame_time
