@@ -2,7 +2,6 @@ from bvh import Bvh
 
 # Read the BVH file and parse it
 with open("BVH-Recording1.bvh") as f:
-    bvh_data = f.read().splitlines()
     bvh = f.read()
 
 # Parse the BVH data
