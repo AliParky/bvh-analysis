@@ -18,3 +18,6 @@ total_duration = num_frames * frame_time
 print(f"Number of frames: {num_frames}")
 print(f"Frame time: {frame_time} seconds")
 print(f"Total duration: {total_duration} seconds")
+
+# Extract joint names
+joint_names = [joint.name for joint in bvh.get_joints()]
