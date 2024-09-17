@@ -21,3 +21,7 @@ print(f"Total duration: {total_duration} seconds")
 
 # Extract joint names
 joint_names = [joint.name for joint in bvh.get_joints()]
+
+# Function to extract joint rotations
+def extract_joint_rotations(bvh_data, joint_name):
+    return 0, 0, 0
