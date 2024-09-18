@@ -22,6 +22,11 @@ print(f"Total duration: {total_duration} seconds")
 # Extract joint names
 joint_names = [joint.name for joint in bvh.get_joints()]
 
+# Print the hierarchy
+print("\nHierarchy:")
+for joint in bvh.get_joints():
+    print(joint.name)
+
 # Function to extract joint rotations
 def extract_joint_rotations(bvh_data, joint_name):
     return 0, 0, 0
