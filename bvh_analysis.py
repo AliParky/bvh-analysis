@@ -29,4 +29,7 @@ for joint in bvh.get_joints():
 
 # Function to extract joint rotations
 def extract_joint_rotations(bvh_data, joint_name):
-    return 0, 0, 0
+    x_rotations = []
+    y_rotations = []
+    z_rotations = []
+    return x_rotations, y_rotations, z_rotations
