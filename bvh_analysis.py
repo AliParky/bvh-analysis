@@ -32,10 +32,13 @@ for joint in bvh.get_joints():
     for channel in joint.channels:
         print(f"    {channel}")
 
-
 # Function to extract joint rotations
 def extract_joint_rotations(bvh_data, joint_name):
     x_rotations = []
     y_rotations = []
     z_rotations = []
+    for frame in range(bvh_data.nframes):
+        x_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Xrotation')))
+        y_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Yrotation')))
+        z_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Zrotation')))
     return x_rotations, y_rotations, z_rotations
