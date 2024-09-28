@@ -38,9 +38,12 @@ def extract_joint_rotations(bvh_data, joint_name):
     y_rotations = []
     z_rotations = []
     for frame in range(bvh_data.nframes):
-        x_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Xrotation')))
-        y_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Yrotation')))
-        z_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Zrotation')))
+        try:
+            x_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Xrotation')))
+            y_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Yrotation')))
+            z_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Zrotation')))
+        except:
+            break
     return x_rotations, y_rotations, z_rotations
 
 # Extract rotations for RIGHT_UPPER_LEG joint
