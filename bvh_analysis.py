@@ -42,7 +42,8 @@ def extract_joint_rotations(bvh_data, joint_name):
             x_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Xrotation')))
             y_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Yrotation')))
             z_rotations.append(float(bvh_data.frame_joint_channel(frame, joint_name, 'Zrotation')))
-        except:
+        except ValueError as e:
+            print(f"Error: {e}")
             break
     return x_rotations, y_rotations, z_rotations
 
