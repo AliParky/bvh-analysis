@@ -11,3 +11,6 @@ To install BVH Analysis, follow these steps:
     ```
 2. Navigate to the project directory
 3. Install the required dependencies
+    ```sh
+    pip install -r requirements.txt
+    ```
