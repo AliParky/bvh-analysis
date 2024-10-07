@@ -52,3 +52,6 @@ def extract_joint_rotations(bvh_data, joint_name):
 # Extract rotations for RIGHT_UPPER_LEG and RIGHT_LOWER_LEG
 upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh, 'RIGHT_UPPER_LEG')
 lower_x_rot, lower_y_rot, lower_z_rot = extract_joint_rotations(bvh, 'RIGHT_LOWER_LEG')
+
+# Plot the rotations for RIGHT_UPPER_LEG
+plt.plot(upper_x_rot, label='X Rotation')
