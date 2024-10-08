@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 
 # Read the BVH file and parse it
 with open("BVH-Recording1.bvh") as f:
-    bvh = f.read()
+    bvh_data = f.read()
 
 # Parse the BVH data
-bvh = Bvh(bvh)
+bvh_data = Bvh(bvh)
 
 # Find the number of frames
-num_frames = bvh.nframes
-frame_time = bvh.frame_time
+num_frames = bvh_data.nframes
+frame_time = bvh_data.frame_time
 
 # Calculate the total duration
 total_duration = num_frames * frame_time
@@ -21,11 +21,11 @@ print(f"Frame time: {frame_time} seconds")
 print(f"Total duration: {total_duration} seconds")
 
 # Extract joint names
-joint_names = [joint.name for joint in bvh.get_joints()]
+joint_names = [joint.name for joint in bvh_data.get_joints()]
 
 # Print the hierarchy
 print("\nHierarchy:")
-for joint in bvh.get_joints():
+for joint in bvh_data.get_joints():
     print(joint.name)
     if joint.parent:
         print(f"  Parent: {joint.parent.name}")
@@ -50,8 +50,8 @@ def extract_joint_rotations(bvh_data, joint_name):
     return x_rotations, y_rotations, z_rotations
 
 # Extract rotations for RIGHT_UPPER_LEG and RIGHT_LOWER_LEG
-upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh, 'RIGHT_UPPER_LEG')
-lower_x_rot, lower_y_rot, lower_z_rot = extract_joint_rotations(bvh, 'RIGHT_LOWER_LEG')
+upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_UPPER_LEG')
+lower_x_rot, lower_y_rot, lower_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_LOWER_LEG')
 
 # Plot the rotations for RIGHT_UPPER_LEG
 plt.plot(upper_x_rot, label='X Rotation')
