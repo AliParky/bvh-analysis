@@ -10,6 +10,9 @@ To install BVH Analysis, follow these steps:
     git clone https://github.com/yourusername/bvh-analysis.git
     ```
 2. Navigate to the project directory
+    ```sh
+    cd bvh-analysis
+    ```
 3. Install the required dependencies
     ```sh
     pip install -r requirements.txt
