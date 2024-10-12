@@ -6,7 +6,7 @@ with open("BVH-Recording1.bvh") as f:
     bvh_data = f.read()
 
 # Parse the BVH data
-bvh_data = Bvh(bvh)
+bvh_data = Bvh(bvh_data)
 
 # Find the number of frames
 num_frames = bvh_data.nframes
