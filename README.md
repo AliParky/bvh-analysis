@@ -17,3 +17,9 @@ To install BVH Analysis, follow these steps:
     ```sh
     pip install -r requirements.txt
     ```
+
+## Usage
+To use BHV Analysis, follow these steps:
+
+1. Place your BVH files in the project directory.
+2. Run the `bvh_analysis.py` script
