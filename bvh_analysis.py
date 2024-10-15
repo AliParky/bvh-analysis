@@ -29,9 +29,6 @@ for joint in bvh_data.get_joints():
     print(joint.name)
     if joint.parent:
         print(f"  Parent: {joint.parent.name}")
-    print("  Channels:")
-    for channel in joint.channels:
-        print(f"    {channel}")
 
 # Function to extract joint rotations
 def extract_joint_rotations(bvh_data, joint_name):
