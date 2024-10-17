@@ -46,6 +46,11 @@ def extract_joint_rotations(bvh_data, joint_name):
             break
     return x_rotations, y_rotations, z_rotations
 
+# Function to calculate the angle between two joints
+def calculate_joint_angle(upper_x, upper_y, upper_z, lower_x, lower_y, lower_z):
+    angle = 0
+    return angle
+
 # Extract rotations for RIGHT_UPPER_LEG and RIGHT_LOWER_LEG
 upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_UPPER_LEG')
 lower_x_rot, lower_y_rot, lower_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_LOWER_LEG')
