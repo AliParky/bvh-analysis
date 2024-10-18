@@ -27,7 +27,7 @@ joint_names = [joint.name for joint in bvh_data.get_joints()]
 print("\nHierarchy:")
 for joint in bvh_data.get_joints():
     print(joint.name)
-    if joint.parent:
+    if joint.parent.value:
         print(f"  Parent: {joint.parent.name}")
 
 # Function to extract joint rotations
