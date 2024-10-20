@@ -1,5 +1,6 @@
 from bvh import Bvh
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Read the BVH file and parse it
 with open("BVH-Recording1.bvh") as f:
