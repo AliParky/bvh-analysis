@@ -49,6 +49,9 @@ def extract_joint_rotations(bvh_data, joint_name):
 
 # Function to calculate the angle between two joints
 def calculate_joint_angle(upper_x, upper_y, upper_z, lower_x, lower_y, lower_z):
+    upper_vector = np.array([upper_x, upper_y, upper_z])
+    lower_vector = np.array([lower_x, lower_y, lower_z])
+    dot_product = np.dot(upper_vector, lower_vector)
     angle = 0
     return angle
 
