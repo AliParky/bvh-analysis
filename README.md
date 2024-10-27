@@ -28,6 +28,6 @@ To use BHV Analysis, follow these steps:
     ```
 
 ## Dependencies
-- `bvh`
-- `matplotlib`
-- `numpy`
+- `bvh`: A library for parsing BVH files.
+- `matplotlib`: A library for creating static, animated, and interactive visualizations in Python.
+- `numpy`: A library for numerical computations in Python.
