@@ -54,6 +54,7 @@ def calculate_joint_angle(upper_x, upper_y, upper_z, lower_x, lower_y, lower_z):
     dot_product = np.dot(upper_vector, lower_vector)
     norm_upper = np.linalg.norm(upper_vector)
     norm_lower = np.linalg.norm(lower_vector)
+    cos_angle = dot_product / (norm_upper * norm_lower)
     angle = 0
     return angle
 
