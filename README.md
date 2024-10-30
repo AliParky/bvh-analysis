@@ -2,6 +2,11 @@
 
 BVH Analysis is a tool for analyzing and visualizing BVH files (Biovision Hierarchy), which are commonly used for motion capture data.
 
+## Features
+
+- Parse BVH files and extract motion capture data.
+- Visualize joint rotations over time.
+
 ## Installation
 To install BVH Analysis, follow these steps:
 
