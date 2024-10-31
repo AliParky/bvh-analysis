@@ -67,9 +67,9 @@ time_axis = [frame * frame_time for frame in range(num_frames)]
 
 # Plot the rotations for RIGHT_UPPER_LEG
 plt.figure(figsize=(10, 5))
-plt.plot(upper_x_rot, label='X Rotation')
-plt.plot(upper_y_rot, label='Y Rotation')
-plt.plot(upper_z_rot, label='Z Rotation')
+plt.plot(time_axis, upper_x_rot, label='X Rotation')
+plt.plot(time_axis, upper_y_rot, label='Y Rotation')
+plt.plot(time_axis, upper_z_rot, label='Z Rotation')
 plt.xlabel('Frame')
 plt.ylabel('Rotation (degrees)')
 plt.title('RIGHT_UPPER_LEG Rotations')
