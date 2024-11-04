@@ -62,6 +62,9 @@ def calculate_joint_angle(upper_x, upper_y, upper_z, lower_x, lower_y, lower_z):
 upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_UPPER_LEG')
 lower_x_rot, lower_y_rot, lower_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_LOWER_LEG')
 
+# Calculate the right knee angle over time
+right_knee_angles = []
+
 # Convert frames to time (seconds)
 time_axis = [frame * frame_time for frame in range(num_frames)]
 
