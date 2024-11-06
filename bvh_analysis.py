@@ -78,3 +78,6 @@ plt.ylabel('Rotation (degrees)')
 plt.title('RIGHT_UPPER_LEG Rotations')
 plt.legend()
 plt.show()
+
+# Plot the angles for RIGHT_KNEE
+plt.plot(time_axis, right_knee_angles)
