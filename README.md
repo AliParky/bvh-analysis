@@ -28,7 +28,8 @@ To install BVH Analysis, follow these steps:
 To use BHV Analysis, follow these steps:
 
 1. Place your BVH files in the project directory.
-2. Run the `bvh_analysis.py` script
+2. Open the `bvh_analysis.py` script in a text editor and change the filename in the following line to match your BVH file
+3. Run the `bvh_analysis.py` script
     ```sh
     python bvh_analysis.py
     ```
