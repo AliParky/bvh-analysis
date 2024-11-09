@@ -84,3 +84,5 @@ plt.show()
 
 # Plot the angles for RIGHT_KNEE
 plt.plot(time_axis, right_knee_angles)
+plt.xlabel('Time (seconds)')
+plt.ylabel('Angle (radians)')
