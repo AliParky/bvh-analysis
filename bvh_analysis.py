@@ -56,7 +56,7 @@ def calculate_joint_angle(upper_x, upper_y, upper_z, lower_x, lower_y, lower_z):
     norm_lower = np.linalg.norm(lower_vector)
     cos_angle = dot_product / (norm_upper * norm_lower)
     angle = np.arccos(cos_angle)
-    return angle
+    return np.degrees(angle)
 
 # Extract rotations for RIGHT_UPPER_LEG and RIGHT_LOWER_LEG
 upper_x_rot, upper_y_rot, upper_z_rot = extract_joint_rotations(bvh_data, 'RIGHT_UPPER_LEG')
