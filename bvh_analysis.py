@@ -24,6 +24,9 @@ print(f"Total duration: {total_duration} seconds")
 # Extract joint names
 joint_names = [joint.name for joint in bvh_data.get_joints()]
 
+# Print the total number of joints
+print(f"Total number of joints: {len(joint_names)}")
+
 # Print the hierarchy
 print("\nHierarchy:")
 for joint in bvh_data.get_joints():
