@@ -5,9 +5,10 @@ BVH Analysis is a tool for analyzing and visualizing BVH files (Biovision Hierar
 ## Features
 
 - Parse BVH files and extract motion capture data.
-- Visualize joint rotations over time.
 - Print the hierarchy of joints.
 - Calculate angles between joints.
+- Plot joint rotations over time.
+- Plot joint angles over time.
 
 ## Installation
 To install BVH Analysis, follow these steps:
