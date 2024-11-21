@@ -2,8 +2,11 @@ from bvh import Bvh
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Define the BVH filename
+bvh_filename = "BVH-Recording1.bvh"
+
 # Read the BVH file and parse it
-with open("BVH-Recording1.bvh") as f:
+with open(bvh_filename) as f:
     bvh_data = f.read()
 
 # Parse the BVH data
