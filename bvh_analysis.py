@@ -86,6 +86,7 @@ plt.xlabel('Time (seconds)')
 plt.ylabel('Rotation (degrees)')
 plt.title('RIGHT_UPPER_LEG Rotations')
 plt.legend()
+plt.savefig('right_upper_leg_rotations.png')
 plt.show()
 
 # Plot the angles for RIGHT_KNEE
